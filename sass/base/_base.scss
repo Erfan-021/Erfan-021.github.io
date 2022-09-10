@@ -1,15 +1,3 @@
-// COLOR VARIABLES
-$color-primary: #0c202d;
-$color-secondary: #183c48;
-$color-secondary-dark: #14323f;
-$color-tertiary: #60dbe4;
-
-$color-blue-main: #1c599c;
-$color-white: #fff;
-$color-black: #000;
-
-// FONT VARIABLES
-
 // BASE
 *,
 *::before,
@@ -32,68 +20,6 @@ body {
   overflow: hidden;
 }
 
-.circle-1 {
-  background-color: $color-tertiary;
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  left: -8rem;
-  filter: blur(7rem);
-  z-index: -5;
-}
-
-.circle-2 {
-  background-color: $color-tertiary;
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 60%;
-  transform: translate(0, -50%);
-  right: -18rem;
-  filter: blur(7rem);
-  z-index: -5;
-}
-
-.circle-3 {
-  background: linear-gradient(to right bottom, rgba($color-tertiary, 0.5), rgba($color-white, 0.1));
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 4rem;
-  right: 2rem;
-  filter: blur(1px);
-  z-index: -5;
-}
-
-.circle-4 {
-  background: linear-gradient(to right bottom, rgba($color-tertiary, 0.5), rgba($color-white, 0.1));
-  height: 25rem;
-  width: 25rem;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -12rem;
-  left: 23rem;
-  filter: blur(1px);
-  z-index: -5;
-}
-
-.circle-5 {
-  background: linear-gradient(to right bottom, rgba($color-white, 0.1), rgba($color-tertiary, 0.5));
-  height: 13rem;
-  width: 13rem;
-  border-radius: 50%;
-  position: absolute;
-  top: -5rem;
-  left: -5rem;
-  filter: blur(1px);
-  z-index: -5;
-}
-
 .container {
   max-width: 135rem;
   height: 95vh;
@@ -107,6 +33,7 @@ body {
 
 .aside {
   background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba($color-tertiary, 0.1);
   grid-column: full-start / main-start;
@@ -135,11 +62,15 @@ body {
 
 .main {
   background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba($color-tertiary, 0.1);
   grid-column: main-start / main-end;
   border-radius: 1.6rem;
   overflow-y: scroll;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
   &__items {
     list-style: none;
@@ -151,6 +82,7 @@ body {
     padding: 2rem;
   }
 
-  &__item {
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

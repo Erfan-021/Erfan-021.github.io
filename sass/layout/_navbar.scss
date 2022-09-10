@@ -1,19 +1,64 @@
-.nav {
+.header {
   background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba($color-tertiary, 0.1);
   grid-column: full-start / full-end;
   border-radius: 1.6rem;
   box-shadow: 5px 5px 1rem rgba($color-black, 0.1);
 
-  &__items {
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  &__left-side {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    gap: 3rem;
+    margin-left: 2rem;
   }
 
-  &__item {
+  &__right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav--items {
+    list-style: none;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav--item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+  }
+
+  &__nav--link:link,
+  &__nav--link:visited {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: $font-heading;
+    color: $color-white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__nav--link:hover,
+  &__nav--link:active {
+    color: $color-primary;
+  }
+
+  &__nav--item:hover {
+    background-color: $color-tertiary;
+    box-shadow: 0 0 10px $color-tertiary, 0 0 20px $color-tertiary;
   }
 }
