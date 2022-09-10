@@ -8,7 +8,22 @@ $color-blue-main: #1c599c;
 $color-white: #fff;
 $color-black: #000;
 
-// FONT VARIABLES
+// GLASS
+
+$base-glass: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+$base-glass-border: 0.5px solid rgba($color-tertiary, 0.1);
+$base-glass-shadow: 5px 5px 1rem rgba($color-black, 0.1);
+
+// SHADOW
+
+$main-btn-hover-shadow: 0 0 1rem $color-tertiary, 0 0 2rem $color-tertiary;
+$base-text-shadow-light: 0 0 1rem $color-tertiary;
+
+// FONT-FAMILY VARIABLES
 
 $font-heading: "Outfit", sans-serif;
 $font-text: "Roboto", sans-serif;
+
+// FONT-SIZE
+
+$text-font: 1.6rem;

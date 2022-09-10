@@ -32,10 +32,10 @@ body {
 }
 
 .aside {
-  background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  background: $base-glass;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  border: 0.5px solid rgba($color-tertiary, 0.1);
+  border: $base-glass-border;
   grid-column: full-start / main-start;
   border-radius: 1.6rem;
   overflow: hidden;
@@ -61,10 +61,10 @@ body {
 }
 
 .main {
-  background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  background: $base-glass;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  border: 0.5px solid rgba($color-tertiary, 0.1);
+  border: $base-glass-border;
   grid-column: main-start / main-end;
   border-radius: 1.6rem;
   overflow-y: scroll;

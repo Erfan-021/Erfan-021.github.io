@@ -199,6 +199,8 @@ body {
   box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between; }
+  .header__logo {
+    text-shadow: 0 0 1rem #60dbe4; }
   .header__left-side {
     display: flex;
     align-items: center;
@@ -234,4 +236,4 @@ body {
     color: #0c202d; }
   .header__nav--item:hover {
     background-color: #60dbe4;
-    box-shadow: 0 0 10px #60dbe4, 0 0 20px #60dbe4; }
+    box-shadow: 0 0 1rem #60dbe4, 0 0 2rem #60dbe4; }
