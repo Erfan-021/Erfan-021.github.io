@@ -1,0 +1,19 @@
+.nav {
+  background: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
+  backdrop-filter: blur(8px);
+  border: 0.5px solid rgba($color-tertiary, 0.1);
+  grid-column: full-start / full-end;
+  border-radius: 1.6rem;
+  box-shadow: 5px 5px 1rem rgba($color-black, 0.1);
+
+  &__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  &__item {
+  }
+}
