@@ -1,6 +1,7 @@
 // COLOR VARIABLES
 $color-primary: #0c202d;
 $color-secondary: #183c48;
+$color-secondary-2: #1c3b46;
 $color-secondary-dark: #14323f;
 $color-tertiary: #60dbe4;
 
@@ -8,16 +9,19 @@ $color-blue-main: #1c599c;
 $color-white: #fff;
 $color-black: #000;
 
+$base-text-color: #c3f5fa;
 // GLASS
 
 $base-glass: linear-gradient(to right bottom, rgba($color-tertiary, 0.1), rgba($color-white, 0.1));
 $base-glass-border: 0.5px solid rgba($color-tertiary, 0.1);
-$base-glass-shadow: 5px 5px 1rem rgba($color-black, 0.1);
 
 // SHADOW
 
 $main-btn-hover-shadow: 0 0 1rem $color-tertiary, 0 0 2rem $color-tertiary;
 $base-text-shadow-light: 0 0 1rem $color-tertiary;
+$base-text-shadow-light-sm: 0 0 0.5rem $color-tertiary;
+
+$base-glass-shadow: 5px 5px 1rem rgba($color-black, 0.1);
 
 // FONT-FAMILY VARIABLES
 

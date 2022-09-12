@@ -31,35 +31,6 @@ body {
   gap: 2rem;
 }
 
-.aside {
-  background: $base-glass;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border: $base-glass-border;
-  grid-column: full-start / main-start;
-  border-radius: 1.6rem;
-  overflow: hidden;
-
-  display: grid;
-  grid-template-rows: 25rem 1fr 5rem;
-
-  &__items {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 5rem;
-    padding: 2rem;
-  }
-
-  &__user {
-    grid-row: 1/2;
-  }
-  &__footer {
-    grid-row: 3/-1;
-  }
-}
-
 .main {
   background: $base-glass;
   -webkit-backdrop-filter: blur(8px);

@@ -4,10 +4,13 @@
   transition: all 0.3s;
 
   &__toggle-mode {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
     background-color: rgba($color-tertiary, 0.1);
     color: rgba($color-white, 0.8);
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -25,6 +28,12 @@
 
     &:hover {
       box-shadow: 0 0 0.6rem $color-tertiary;
+      background-color: rgba($color-tertiary, 0.3);
+    }
+
+    &--active:hover {
+      box-shadow: 0 0 0.6rem $color-tertiary;
+      background-color: rgba($color-tertiary, 0.8);
     }
   }
 }

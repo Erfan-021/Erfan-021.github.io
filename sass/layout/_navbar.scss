@@ -11,7 +11,7 @@
   justify-content: space-between;
 
   &__logo {
-    text-shadow: $base-text-shadow-light;
+    animation: text-light-on-off 4s infinite;
   }
 
   &__left-side {
