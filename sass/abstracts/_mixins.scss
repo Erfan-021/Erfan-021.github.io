@@ -1,0 +1,6 @@
+@mixin bg-glass {
+  background: $base-glass;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: $base-glass-border;
+}

@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: $color-white;
   background-color: $color-primary;
   overflow: hidden;
@@ -32,26 +34,16 @@ body {
 }
 
 .main {
-  background: $base-glass;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border: $base-glass-border;
+  // @include bg-glass;
   grid-column: main-start / main-end;
   border-radius: 1.6rem;
   overflow-y: scroll;
 
+  display: grid;
+  grid-template-columns: [full-start] repeat(6, [col-start] 1fr [col-end]) [full-end];
+
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-
-  &__items {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 20rem;
-    height: 120rem;
-    padding: 2rem;
-  }
 
   &::-webkit-scrollbar {
     display: none;

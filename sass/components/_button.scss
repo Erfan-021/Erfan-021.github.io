@@ -2,10 +2,10 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
+  text-transform: uppercase;
 
   &__toggle-mode {
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: 600;
     background-color: rgba($color-tertiary, 0.1);
     color: rgba($color-white, 0.8);
@@ -35,5 +35,20 @@
       box-shadow: 0 0 0.6rem $color-tertiary;
       background-color: rgba($color-tertiary, 0.8);
     }
+  }
+
+  &-light,
+  &-light:link,
+  &-light:visited {
+    font-weight: 500;
+    padding: 2rem 3rem;
+    background: $color-tertiary;
+    color: $color-primary;
+    border-radius: 1.2rem;
+  }
+
+  &-light:hover,
+  &-light:active {
+    box-shadow: $main-btn-hover-shadow;
   }
 }
