@@ -189,6 +189,8 @@ body {
     .about__content span {
       font-size: 3rem;
       margin-right: -5px; }
+  .about__text {
+    line-height: 1.8; }
   .about__userframeworks {
     background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
     -webkit-backdrop-filter: blur(8px);
@@ -442,7 +444,7 @@ body {
   .sidebar__user-btn {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     background: #60dbe4;
     color: #0c202d;
     padding: 0.5rem 1rem;
