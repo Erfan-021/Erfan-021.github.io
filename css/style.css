@@ -113,6 +113,19 @@ body {
   .heading-4--dark {
     color: #0c202d; }
 
+.heading-5 {
+  font-size: 1.6rem;
+  font-weight: 300; }
+  .heading-5--light {
+    color: #60dbe4; }
+  .heading-5--dark {
+    color: #0c202d; }
+
+.heading-sections {
+  margin: 1rem 0.8rem;
+  color: #60dbe4;
+  text-shadow: 0 0 1rem #60dbe4; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -161,6 +174,44 @@ body {
     border-radius: 1.2rem; }
   .btn-light:hover, .btn-light:active {
     box-shadow: 0 0 1rem #60dbe4, 0 0 2rem #60dbe4; }
+
+.about {
+  margin-top: 6rem; }
+  .about__content {
+    background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid rgba(96, 219, 228, 0.1);
+    border-radius: 1.4rem;
+    padding: 3rem 2rem;
+    font-size: 1.9rem;
+    color: #c3f5fa; }
+    .about__content span {
+      font-size: 3rem;
+      margin-right: -5px; }
+  .about__userframeworks {
+    background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid rgba(96, 219, 228, 0.1);
+    border-radius: 1.4rem;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 3rem 2rem; }
+    .about__userframeworks-heading {
+      margin-bottom: 4rem;
+      color: #60dbe4;
+      text-shadow: 0 0 0.5rem #60dbe4; }
+    .about__userframeworks-item {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      gap: 2rem; }
+      .about__userframeworks-item:not(:last-child) {
+        margin-bottom: 3rem; }
+    .about__userframeworks-itemlist {
+      list-style: none;
+      display: flex; }
 
 .circle-1 {
   background-color: #60dbe4;
@@ -227,6 +278,7 @@ body {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
+  border-radius: 1.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -322,6 +374,9 @@ body {
   .header__nav--item:hover {
     background-color: #60dbe4;
     box-shadow: 0 0 1rem #60dbe4, 0 0 2rem #60dbe4; }
+
+.services {
+  margin-top: 3rem; }
 
 .sidebar {
   background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));

@@ -51,3 +51,22 @@
     color: $color-primary;
   }
 }
+
+.heading-5 {
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  &--light {
+    color: $color-tertiary;
+  }
+
+  &--dark {
+    color: $color-primary;
+  }
+}
+
+.heading-sections {
+  margin: 1rem 0.8rem;
+  color: $color-tertiary;
+  text-shadow: $base-text-shadow-light;
+}

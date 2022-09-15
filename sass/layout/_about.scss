@@ -1,0 +1,46 @@
+.about {
+  margin-top: 6rem;
+
+  &__content {
+    & span {
+      font-size: 3rem;
+      margin-right: -5px;
+    }
+
+    @include bg-glass;
+    padding: 3rem 2rem;
+    font-size: 1.9rem;
+    color: $base-text-color;
+  }
+
+  &__userframeworks {
+    @include bg-glass;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 3rem 2rem;
+
+    &-heading {
+      margin-bottom: 4rem;
+      color: $color-tertiary;
+      text-shadow: $base-text-shadow-light-sm;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      gap: 2rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-itemlist {
+      list-style: none;
+      display: flex;
+      &--item {
+      }
+    }
+  }
+}
