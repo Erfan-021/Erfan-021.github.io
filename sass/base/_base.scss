@@ -17,6 +17,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: $base-text-font;
   color: $color-white;
   background-color: $color-primary;
   overflow: hidden;
@@ -39,8 +40,8 @@ body {
   border-radius: 1.6rem;
   overflow-y: scroll;
 
-  display: grid;
-  grid-template-columns: [full-start] repeat(6, [col-start] 1fr [col-end]) [full-end];
+  // display: grid;
+  // grid-template-columns: [full-start] repeat(6, [col-start] 1fr [col-end]) [full-end];
 
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
