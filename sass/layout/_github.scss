@@ -1,0 +1,6 @@
+.github {
+  grid-column: full-start/full-end;
+  @include bg-glass;
+  height: 25rem;
+  margin-bottom: 5rem;
+}
