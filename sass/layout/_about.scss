@@ -1,14 +1,23 @@
 .about {
   margin-top: 6rem;
+  grid-column: full-start/fullend;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+
+  & .heading-sections {
+    grid-column: 1/-1;
+  }
 
   &__content {
+    grid-column: 1/7;
     & span {
       font-size: 3rem;
       margin-right: -5px;
     }
 
     @include bg-glass;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     font-size: 1.9rem;
     color: $base-text-color;
   }
@@ -18,13 +27,15 @@
   }
 
   &__userframeworks {
+    grid-column: 7/-1;
     @include bg-glass;
-    width: 50%;
-    margin-top: 2rem;
     padding: 3rem 2rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     &-heading {
-      margin-bottom: 4rem;
       color: $color-tertiary;
       text-shadow: $base-text-shadow-light-sm;
     }
@@ -35,15 +46,37 @@
       justify-items: center;
       gap: 2rem;
 
-      &:not(:last-child) {
-        margin-bottom: 3rem;
-      }
+      // &:not(:last-child) {
+      //   margin-bottom: 3rem;
+      // }
     }
 
     &-itemlist {
       list-style: none;
       display: flex;
       &--item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4.5rem;
+        width: 4.5rem;
+        background-color: $color-primary;
+        border-radius: 50%;
+        border: 2px solid $color-secondary-2;
+        transition: all 0.2s;
+
+        &:not(:first-child) {
+          margin-left: -1rem;
+        }
+
+        &---img {
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+
+        &:hover {
+          transform: scale(1.15);
+        }
       }
     }
   }
