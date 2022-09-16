@@ -294,6 +294,33 @@ body {
   filter: blur(1px);
   z-index: -5; }
 
+.footer {
+  background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 0.5px solid rgba(96, 219, 228, 0.1);
+  border-radius: 1.4rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0 1rem; }
+  .footer__box {
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: #c3f5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.github {
+  grid-column: full-start/full-end;
+  background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 0.5px solid rgba(96, 219, 228, 0.1);
+  border-radius: 1.4rem;
+  height: 25rem;
+  margin-bottom: 5rem; }
+
 .hero {
   grid-column: full-start/ full-end;
   overflow: hidden;
