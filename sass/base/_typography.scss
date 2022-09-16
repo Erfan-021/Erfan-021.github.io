@@ -45,6 +45,7 @@
 
   &--light {
     color: $color-tertiary;
+    text-shadow: $base-text-shadow-light-sm;
   }
 
   &--dark {
@@ -67,7 +68,8 @@
 }
 
 .heading-sections {
-  margin: 1rem 0.8rem;
+  grid-column: 1/-1;
+  margin: 3rem 0.8rem 1.5rem;
   color: $color-tertiary;
   text-shadow: $base-text-shadow-light;
 }

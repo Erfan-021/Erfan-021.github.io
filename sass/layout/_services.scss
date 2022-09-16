@@ -1,0 +1,31 @@
+.services {
+  grid-column: full-start/fullend;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 2rem;
+
+  &__card {
+    @include bg-glass;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &--paragraph {
+      color: $base-text-color;
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
+    & a {
+      align-self: flex-start;
+    }
+
+    & a:hover {
+      letter-spacing: 1px;
+    }
+  }
+}

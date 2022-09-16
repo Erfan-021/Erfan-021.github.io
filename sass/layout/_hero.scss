@@ -2,6 +2,7 @@
   grid-column: full-start/ full-end;
   overflow: hidden;
   position: relative;
+  margin-bottom: 4rem;
 
   @include bg-glass;
   display: flex;

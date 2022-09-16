@@ -1,5 +1,4 @@
 .about {
-  margin-top: 6rem;
   grid-column: full-start/fullend;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -35,10 +34,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    &-heading {
-      color: $color-tertiary;
-      text-shadow: $base-text-shadow-light-sm;
-    }
+    // &-heading {
+    //   color: $color-tertiary;
+    //   text-shadow: $base-text-shadow-light-sm;
+    // }
 
     &-item {
       display: flex;
