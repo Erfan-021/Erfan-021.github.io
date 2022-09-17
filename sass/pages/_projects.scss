@@ -1,0 +1,35 @@
+.projects {
+  &__selectcategory {
+    grid-column: 1/-1;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+
+    &--item {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $base-text-color;
+      opacity: 0.5;
+      transition: all 0.2s;
+    }
+
+    &--item:hover {
+      text-shadow: $base-text-shadow-light-sm;
+      opacity: 0.9;
+    }
+  }
+
+  &__cards {
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  &__card {
+    @include bg-glass;
+    height: 30rem;
+  }
+}

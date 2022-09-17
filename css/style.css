@@ -311,7 +311,7 @@ body {
   border-radius: 1.4rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  margin: 0 1rem; }
+  margin: 8rem 1rem 0 1rem; }
   .footer__box {
     padding: 2rem;
     font-size: 1.4rem;
@@ -327,8 +327,7 @@ body {
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
   border-radius: 1.4rem;
-  height: 25rem;
-  margin-bottom: 5rem; }
+  height: 25rem; }
 
 .hero {
   grid-column: full-start/ full-end;
@@ -650,3 +649,33 @@ body {
 .main-section {
   display: grid;
   grid-template-columns: [full-start] repeat(6, [col-start] 1fr [col-end]) [full-end]; }
+
+.projects__selectcategory {
+  grid-column: 1/-1;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem; }
+  .projects__selectcategory--item {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #c3f5fa;
+    opacity: 0.5;
+    transition: all 0.2s; }
+  .projects__selectcategory--item:hover {
+    text-shadow: 0 0 0.5rem #60dbe4;
+    opacity: 0.9; }
+
+.projects__cards {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem; }
+
+.projects__card {
+  background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 0.5px solid rgba(96, 219, 228, 0.1);
+  border-radius: 1.4rem;
+  height: 30rem; }
