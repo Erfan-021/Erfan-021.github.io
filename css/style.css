@@ -94,6 +94,8 @@ body {
     text-shadow: 0 0 1rem #60dbe4, 0 0 2rem #60dbe4, 0 0 4rem #60dbe4, 0 0 8rem #60dbe4; } }
 
 .heading-1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   font-size: 6rem; }
   .heading-1--light {
     color: #60dbe4; }
@@ -101,6 +103,8 @@ body {
     color: #0c202d; }
 
 .heading-2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   font-size: 2.5rem; }
   .heading-2--light {
     color: #60dbe4; }
@@ -108,6 +112,8 @@ body {
     color: #0c202d; }
 
 .heading-3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
   font-size: 2rem; }
   .heading-3--light {
     color: #60dbe4; }
@@ -115,6 +121,7 @@ body {
     color: #0c202d; }
 
 .heading-4 {
+  font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
   font-weight: 300; }
   .heading-4--light {
@@ -124,6 +131,7 @@ body {
     color: #0c202d; }
 
 .heading-5 {
+  font-family: "Outfit", sans-serif;
   color: #c3f5fa;
   font-size: 1.6rem;
   font-weight: 300; }
@@ -133,6 +141,7 @@ body {
     color: #0c202d; }
 
 .heading-sections {
+  font-family: "Outfit", sans-serif;
   grid-column: 1/-1;
   margin: 3rem 0.8rem 1.5rem;
   color: #60dbe4;
@@ -309,8 +318,6 @@ body {
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
   border-radius: 1.4rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
   margin: 8rem 1rem 0 1rem; }
   .footer__box {
     padding: 2rem;
@@ -645,6 +652,89 @@ body {
       transition: all 0.4s; }
     .sidebar__footer-link:hover, .sidebar__footer-link:active {
       color: rgba(96, 219, 228, 0.9); }
+
+.contact__information {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem; }
+  .contact__information--card {
+    background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid rgba(96, 219, 228, 0.1);
+    border-radius: 1.4rem; }
+  .contact__information--content {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem; }
+    .contact__information--content > li > h4 {
+      display: flex;
+      justify-content: space-between; }
+      .contact__information--content > li > h4 span:last-child {
+        color: #c3f5fa; }
+
+.contact__form {
+  grid-column: 1/-1;
+  background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 0.5px solid rgba(96, 219, 228, 0.1);
+  border-radius: 1.4rem;
+  padding: 3rem 5rem;
+  height: 100%; }
+  .contact__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+  .contact__form--item {
+    width: 100%;
+    height: 6rem;
+    position: relative; }
+    .contact__form--item---message {
+      height: 15rem;
+      width: 100%;
+      position: relative; }
+    .contact__form--item input,
+    .contact__form--item---message textarea {
+      font-family: inherit;
+      color: #c3f5fa;
+      font-size: 1.8rem;
+      width: 100%;
+      height: 100%;
+      background: rgba(96, 219, 228, 0.09);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      border: 2px solid #60dbe4;
+      border-radius: 1.4rem;
+      padding: 2rem 2rem;
+      outline: none; }
+    .contact__form--item label,
+    .contact__form--item---message label {
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+      text-transform: capitalize;
+      color: #fff;
+      opacity: 0;
+      font-size: 1.8rem;
+      transition: all 0.3s;
+      padding: 0 0.5rem; }
+    .contact__form--item input:focus ~ label,
+    .contact__form--item---message textarea:focus ~ label {
+      top: -1rem;
+      background-color: #264c5a;
+      border-radius: 1rem;
+      opacity: 1;
+      padding: 0.2rem 1rem; }
+    .contact__form--item input::placeholder,
+    .contact__form--item---message textarea::placeholder {
+      color: #c3f5fa;
+      opacity: 0.3; }
+  .contact__form--btn button {
+    font-size: 1.4rem;
+    font-weight: 600; }
 
 .main-section {
   display: grid;
