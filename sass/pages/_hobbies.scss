@@ -1,0 +1,86 @@
+.hobbies {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 2rem;
+
+  &__box {
+    @include bg-glass;
+    height: 38rem;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: relative;
+
+    &-wow::after {
+      content: "";
+      background-image: $base-bg-gradiant, url(../../img/Wow3.jpg);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &-insta::after {
+      content: "";
+      background-image: $base-bg-gradiant, url(../../img/instagram2.jpg);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &-discord::after {
+      content: "";
+      background-image: $base-bg-gradiant, url(../../img/Discord2.png);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &-content {
+      flex: 0 0 55%;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      & p {
+        font-size: 1.8rem;
+        color: $base-text-color;
+        line-height: 1.6;
+      }
+    }
+
+    &-img {
+      flex: 0 0 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -26,6 +26,14 @@ $text-shadow-hero: 0 0 1rem $color-tertiary, 0 0 2rem $color-tertiary, 0 0 4rem 
 
 $base-glass-shadow: 5px 5px 1rem rgba($color-black, 0.1);
 
+// GRADIANT
+$base-bg-gradiant: radial-gradient(
+  rgba(41, 41, 41, 0.5) 0%,
+  rgba(41, 41, 41, 0.6) 30%,
+  rgba(41, 41, 41, 0.7) 50%,
+  rgba(41, 41, 41, 0.8) 80%
+);
+
 // FONT-FAMILY VARIABLES
 
 $font-heading: "Outfit", sans-serif;
