@@ -43,6 +43,8 @@ body {
   color: $color-white;
   background-color: $color-primary;
   overflow: hidden;
+
+  margin: 0 auto;
 }
 
 .container {
@@ -60,7 +62,7 @@ body {
   }
 
   @media only screen and (max-width: $bp-medium) {
-    height: 100%;
+    height: 100vh;
   }
 
   @media only screen and (max-width: $bp-small) {
