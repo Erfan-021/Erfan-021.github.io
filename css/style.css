@@ -14,7 +14,9 @@ html {
   /* font-size:10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden; }
   @media only screen and (max-width: 78.12em) {
     html {
       font-size: 56.25%; } }

@@ -18,6 +18,8 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 56.25%;
