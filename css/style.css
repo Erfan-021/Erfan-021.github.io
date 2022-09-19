@@ -34,8 +34,7 @@ body {
   font-size: 1.4rem;
   color: #fff;
   background-color: #0c202d;
-  overflow: hidden;
-  margin: 0 auto; }
+  overflow: hidden; }
   @media only screen and (max-width: 50em) {
     body {
       position: fixed; } }
@@ -64,8 +63,10 @@ body {
 
 .main {
   grid-column: main-start / main-end;
+  grid-row: 2/-1;
   border-radius: 1.6rem;
   overflow-y: scroll;
+  position: relative;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;

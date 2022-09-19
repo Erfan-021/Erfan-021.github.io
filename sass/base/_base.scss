@@ -44,8 +44,6 @@ body {
   background-color: $color-primary;
   overflow: hidden;
 
-  margin: 0 auto;
-
   @media only screen and (max-width: $bp-medium) {
     position: fixed;
   }
@@ -82,8 +80,10 @@ body {
 .main {
   // @include bg-glass;
   grid-column: main-start / main-end;
+  grid-row: 2/-1;
   border-radius: 1.6rem;
   overflow-y: scroll;
+  position: relative;
 
   @media only screen and (max-width: $bp-large) {
     grid-column: full-start/full-end;
