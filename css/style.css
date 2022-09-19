@@ -367,7 +367,7 @@ body {
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
   border-radius: 1.4rem;
-  margin-top: auto;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,8 +387,7 @@ body {
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
   border-radius: 1.4rem;
-  height: 25rem;
-  margin-bottom: 5rem; }
+  height: 25rem; }
 
 .hero {
   grid-column: full-start/ full-end;
