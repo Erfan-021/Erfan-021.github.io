@@ -36,6 +36,9 @@ body {
   background-color: #0c202d;
   overflow: hidden;
   margin: 0 auto; }
+  @media only screen and (max-width: 50em) {
+    body {
+      position: fixed; } }
 
 .container {
   max-width: 135rem;
