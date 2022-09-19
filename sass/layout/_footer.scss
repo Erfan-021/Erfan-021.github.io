@@ -4,12 +4,17 @@
   // border-bottom-right-radius: 0;
   margin-top: auto;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+
   &__box {
     padding: 2rem;
     font-size: $base-text-font;
     color: $base-text-color;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

@@ -368,14 +368,18 @@ body {
   backdrop-filter: blur(8px);
   border: 0.5px solid rgba(96, 219, 228, 0.1);
   border-radius: 1.4rem;
-  margin-top: auto; }
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  width: 100%; }
   .footer__box {
     padding: 2rem;
     font-size: 1.4rem;
     color: #c3f5fa;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    display: flex; }
 
 .github {
   grid-column: full-start/full-end;
