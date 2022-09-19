@@ -78,9 +78,9 @@ body {
 }
 
 .main {
+  display: grid;
   // @include bg-glass;
   grid-column: main-start / main-end;
-  grid-row: 2/-1;
   border-radius: 1.6rem;
   overflow-y: scroll;
   position: relative;
