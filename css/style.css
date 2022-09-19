@@ -73,7 +73,10 @@ body {
   /* Firefox */ }
   @media only screen and (max-width: 62.5em) {
     .main {
-      grid-column: full-start/full-end; } }
+      grid-column: full-start/full-end;
+      grid-template-columns: 100%;
+      height: 100%;
+      padding-top: 6rem; } }
   .main::-webkit-scrollbar {
     display: none; }
 
