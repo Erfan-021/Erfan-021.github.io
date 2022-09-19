@@ -18,6 +18,22 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 44%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -34,6 +50,14 @@ body {
   height: 95vh;
   margin: 2rem auto;
 
+  @media only screen and (max-width: $bp-largest) {
+    margin: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 2rem;
+  }
+
   display: grid;
   grid-template-columns: [full-start] 30rem [main-start] minmax(30rem, 1fr) [main-end full-end];
   grid-template-rows: [nav-start] 6rem [nav-end content-start] 1fr [content-end];
@@ -45,6 +69,10 @@ body {
   grid-column: main-start / main-end;
   border-radius: 1.6rem;
   overflow-y: scroll;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: full-start/full-end;
+  }
 
   // display: grid;
   // grid-template-columns: [full-start] repeat(6, [col-start] 1fr [col-end]) [full-end];

@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 4rem;
 
+  @media only screen and (max-width: $bp-small) {
+    height: 50rem;
+  }
+
   @include bg-glass;
   display: flex;
   flex-direction: column;
@@ -30,8 +34,21 @@
     z-index: 20;
     -webkit-box-reflect: below -30px linear-gradient(transparent, #0003);
 
+    @media only screen and (max-width: $bp-small) {
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0000);
+    }
+
     & span {
       animation: hero-text-animate 5s infinite;
+
+      @media only screen and (max-width: $bp-small) {
+        display: block;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, #0003);
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
     }
 
     & span:nth-child(even) {
@@ -50,8 +67,9 @@
 
   &__activity-items {
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    row-gap: 2rem;
   }
   &__activity-item {
     display: flex;

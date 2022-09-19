@@ -65,6 +65,10 @@
       flex-direction: column;
       gap: 3rem;
 
+      @media only screen and (max-width: $bp-small) {
+        flex: 1;
+      }
+
       & p {
         font-size: 1.8rem;
         color: $base-text-color;
@@ -77,6 +81,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
 
       & img {
         width: 100%;
