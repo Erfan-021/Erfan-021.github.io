@@ -1,4 +1,12 @@
 .circle-1 {
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
   background-color: $color-tertiary;
   height: 20rem;
   width: 20rem;
@@ -12,6 +20,13 @@
 }
 
 .circle-2 {
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
   background-color: $color-tertiary;
   height: 20rem;
   width: 20rem;
@@ -37,6 +52,18 @@
 }
 
 .circle-4 {
+  @media only screen and (max-width: $bp-medium) {
+    height: 20rem;
+    width: 20rem;
+    bottom: -2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 20rem;
+    width: 20rem;
+    bottom: -2rem;
+  }
+
   background: linear-gradient(to right bottom, rgba($color-tertiary, 0.5), rgba($color-white, 0.1));
   height: 25rem;
   width: 25rem;

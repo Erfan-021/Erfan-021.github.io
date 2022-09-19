@@ -315,6 +315,12 @@ body {
   left: -8rem;
   filter: blur(7rem);
   z-index: -5; }
+  @media only screen and (max-width: 50em) {
+    .circle-1 {
+      display: none; } }
+  @media only screen and (max-width: 37.5em) {
+    .circle-1 {
+      display: none; } }
 
 .circle-2 {
   background-color: #60dbe4;
@@ -327,6 +333,12 @@ body {
   right: -18rem;
   filter: blur(7rem);
   z-index: -5; }
+  @media only screen and (max-width: 50em) {
+    .circle-2 {
+      display: none; } }
+  @media only screen and (max-width: 37.5em) {
+    .circle-2 {
+      display: none; } }
 
 .circle-3 {
   background: linear-gradient(to right bottom, rgba(96, 219, 228, 0.5), rgba(255, 255, 255, 0.1));
@@ -349,6 +361,16 @@ body {
   left: 23rem;
   filter: blur(1px);
   z-index: -5; }
+  @media only screen and (max-width: 50em) {
+    .circle-4 {
+      height: 20rem;
+      width: 20rem;
+      bottom: -2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .circle-4 {
+      height: 20rem;
+      width: 20rem;
+      bottom: -2rem; } }
 
 .circle-5 {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(96, 219, 228, 0.5));
@@ -445,7 +467,7 @@ body {
   .hero__activity-items {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     row-gap: 2rem; }
   .hero__activity-item {
     display: flex;
